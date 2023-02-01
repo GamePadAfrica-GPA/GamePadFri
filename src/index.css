@@ -1,5 +1,13 @@
+/* styles/base.css */
 @tailwind base;
-
 @tailwind components;
-
 @tailwind utilities;
+
+@layer utilities {
+  .content-icons{
+    @apply flex gap-8 ml-[90px] mb-14 mr-7 items-center md:mx-0 
+  }
+  .nav-links{
+    @apply hover:text-pink transition-all duration-200 ease-in cursor-pointer text-lg md:text-xl
+  }
+}
